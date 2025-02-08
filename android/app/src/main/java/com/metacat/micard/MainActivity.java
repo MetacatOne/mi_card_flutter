@@ -1,4 +1,4 @@
-package co.appbrewery.micard;
+package com.metacat.micard;
 
 import io.flutter.embedding.android.FlutterActivity;
 
