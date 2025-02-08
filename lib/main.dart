@@ -13,36 +13,55 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.blue),
+                // padding: EdgeInsets.all(10.0),
+                // decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(20),
+                //     color: Colors.blue),
                 height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.all(20.0),
-                child: Text('Number of donuts eaten'),
+                color: Colors.red,
+                // margin: EdgeInsets.all(20.0),
+                child: Text('Container 1'),
               ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                width: 100.0,
-                height: 100.0,
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.yellow),
-                child: Text("Container 2"),
+              SizedBox(height: double.infinity, width: 30),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.green,
+                  )
+                ],
               ),
+              SizedBox(height: double.infinity, width: 30),
+              // Container(
+              //   margin: EdgeInsets.all(20.0),
+              //   width: 100.0,
+              //   height: 100.0,
+              //   padding: EdgeInsets.all(10.0),
+              //   decoration: BoxDecoration(
+              //       borderRadius: BorderRadius.circular(20),
+              //       color: Colors.yellow),
+              //   child: Text("Container 2"),
+              // ),
               Container(
-                margin: EdgeInsets.all(20.0),
+                // margin: EdgeInsets.all(20.0),
                 width: 100.0,
                 height: 100.0,
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20), color: Colors.red),
+                color: Colors.blue,
+                // padding: EdgeInsets.all(10.0),
+                // decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(20), color: Colors.red),
                 child: Text("Container 3"),
               ),
             ],
