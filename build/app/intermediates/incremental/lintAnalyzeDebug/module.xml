@@ -1,0 +1,25 @@
+<lint-module
+    format="1"
+    dir="I:\FlutterDev\mi_card_flutter\android\app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.4.2"
+    buildFolder="I:\FlutterDev\mi_card_flutter\build\app"
+    bootClassPath="I:\AndroidSdk\platforms\android-34\android.jar;I:\AndroidSdk\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      disable="InvalidPackage"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>
