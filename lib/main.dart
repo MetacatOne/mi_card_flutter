@@ -14,46 +14,110 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.blue),
-                height: 100.0,
-                width: 100.0,
-                margin: EdgeInsets.all(20.0),
-                child: Text('Number of donuts eaten'),
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("images/profile_img.png"),
               ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                width: 100.0,
-                height: 100.0,
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.yellow),
-                child: Text("Container 2"),
+              Text(
+                "George-Cristian Barzu",
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico'),
               ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                width: 100.0,
-                height: 100.0,
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20), color: Colors.red),
-                child: Text("Container 3"),
+              Text(
+                "Backend Software Engineer",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.teal.shade100,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'SourceCodePro'),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                // padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    // mainAxisAlignment: MainAxisAlignment.center,
+                    leading: Icon(
+                      Icons.phone,
+                      size: 40,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "+40 742 627 619",
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontFamily: 'SourceCodePro',
+                          fontSize: 15.0),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                // padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      size: 40,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "barzu.george@gmail.com",
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontFamily: 'SourceCodePro',
+                          fontSize: 15.0),
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          onPressed: () {},
-          child: Icon(Icons.add),
         ),
       ),
     );
   }
 }
+
+// child: Row(
+//   // mainAxisAlignment: MainAxisAlignment.center,
+//   children: <Widget>[
+//     Icon(
+//       Icons.email,
+//       size: 40,
+//       color: Colors.teal,
+//     ),
+//     SizedBox(width: 25.0),
+//     Text(
+//       "barzu.george@gmail.com",
+//       style: TextStyle(
+//           color: Colors.teal,
+//           fontFamily: 'SourceCodePro',
+//           fontSize: 18.0),
+//     ),
+//   ],
+// ),
+// ),
+
+// floatingActionButton: FloatingActionButton(
+//   backgroundColor: Colors.red,
+//   onPressed: () {},
+//   child: Icon(Icons.add),
